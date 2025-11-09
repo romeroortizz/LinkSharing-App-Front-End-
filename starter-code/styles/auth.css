@@ -1,0 +1,145 @@
+*, *::before,*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0 solid transparent;
+}
+
+
+
+html {
+   
+  -webkit-text-size-adjust: 100%;
+  
+}
+
+button{
+    cursor: pointer;
+    transition: 0.5s ease all;
+
+}
+.login-btn:hover,.register.login-btn:hover{
+   background: #643dffce;
+}
+label{
+    font-size: 0.88rem;
+}
+input{
+    width: 100%;
+    text-indent: 0.5rem;
+    position: relative;
+    border: 1px solid rgb(217, 217, 217);
+    padding: 0.8rem 0rem 0.8rem 2rem ;
+    border-radius: 0.5rem;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  line-height: 1.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-rendering: optimizeSpeed;
+  background: rgb(243, 243, 243);
+ 
+}
+
+/*form validation styling*/
+:is([type=email],.type-password):not(:placeholder-shown):invalid{
+    border: 1px solid red;
+}
+
+.input-error,.input-error.password{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 0.8rem;
+    color: red;
+    padding-right: 0.85rem;
+}
+
+/*end of validation styling*/
+.pointer{
+    cursor: pointer;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    
+   
+}
+
+.auth-form{
+    min-width: 25rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: white;
+}
+
+
+.fields{
+    display: flex;
+    flex-direction: column;
+    gap: 0.70rem;
+}
+.input-field{
+    display: flex;
+    
+    flex-direction: column;
+    gap: 0.25rem;
+}
+.login-btn{
+    width: 100%;
+    margin-top: 0.25rem;
+    padding: 0.8rem;
+    border-radius: 0.35rem;
+    background-color: #643dff;
+    color: white;
+}
+.purple{
+    color: #643dff;
+}
+.light-grey{
+    color: rgb(115, 115, 115);
+}
+
+.create-acc-msg{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.holder{
+    display: flex;
+    
+    position: relative;
+}
+
+.mail-icon,.lock-icon {
+    position: absolute;
+    
+    left: 0.8rem;
+    top: 50%;
+    transform: translate(0%,-50%);
+    fill: white;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+/*register form styling*/
+
+.register.form-top{
+    margin-bottom: 1rem;
+}
+
+
+
